@@ -52,5 +52,5 @@ jobs:
         with:
           app-name: 'meanproject11'
           slot-name: 'Production'
-          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_88B1E7DABE054A51AB231ED273B4C18E }}
+          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_0AAC03E81377409BBB33CAE408191BAF }}
           package: .
