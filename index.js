@@ -9,7 +9,7 @@ const cors = require('cors');
 const { options } = require('./routes/account');
 
 const server = express();
-const port = 3677;
+const port = process.env.PORT || 3677;
 
 server.use(cors());
 server.use(express.static(path.join(__dirname, 'public')));
@@ -17,7 +17,7 @@ server.use(express.static(path.join(__dirname, 'public')));
 server.use(passport.initialize());
 require('./configuration/passportConfig')(passport);
 
-mongoose.connect(dbConfig.dbConnection);
+mongoose.connect(process.env.MyConnectionStrinf || dbConfig.dbConnection);
 mongoose.connection.on('connected', ()=>{
     console.log('Database connected...');
 });
