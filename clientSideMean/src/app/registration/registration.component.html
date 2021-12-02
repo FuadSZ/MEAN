@@ -1,0 +1,7 @@
+<h2>Registration</h2>
+<form (submit)="signUpHandler()">
+    <input type="text" name="nickname" [(ngModel)]="nickname" class="form-control" placeholder="Nickname"><br>
+    <input type="email" name="email" [(ngModel)]="email" class="form-control" placeholder="Email"><br>
+    <input type="password" name="password" [(ngModel)]="password" class="form-control" placeholder="Password"><br>
+    <button type="submit" class="btn btn-primary">Sign Up</button>
+</form>

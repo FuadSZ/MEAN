@@ -1,0 +1,6 @@
+<h2>Login</h2>
+<form (submit)="signInHandler()">
+    <input type="text" name="nickname" [(ngModel)]="nickname" class="form-control" placeholder="Nickname"><br>
+    <input type="password" name="password" [(ngModel)]="password" class="form-control" placeholder="Password"><br>
+    <button type="submit" class="btn btn-primary">Sign In</button>
+</form>
