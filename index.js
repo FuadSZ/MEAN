@@ -17,7 +17,7 @@ server.use(express.static(path.join(__dirname, 'public')));
 server.use(passport.initialize());
 require('./configuration/passportConfig')(passport);
 
-mongoose.connect(process.env.MyConnectionStrinf || dbConfig.dbConnection);
+mongoose.connect(process.env.MyConnectionString || dbConfig.dbConnection);
 mongoose.connection.on('connected', ()=>{
     console.log('Database connected...');
 });
